@@ -6,5 +6,8 @@ SELECT e.id,e.name,ISNULL(t.tid,-1) tid,t.checkin,t.checkout
                                       	checkin < '2022-10-01 00:00:00.000') t
                                       	ON e.id = t.eid
 
-SELECT eid,[date],[hours] from OvertimeRegister inner join Festival
-ON [from]<= [date] and [date] <= [to]
+Select*from Festival
+
+SELECT eid,[date],[hours] from OvertimeRegister 
+
+SELECT * from Leave
